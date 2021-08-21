@@ -224,10 +224,11 @@
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block"></span>
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">copyright © 2021 all rights reserved to Abdulsalam Alajlan</span>
 
           </div>
         </footer>
+        
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
