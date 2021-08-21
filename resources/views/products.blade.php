@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Abdulslam App</title>
+  <title>My Project</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
@@ -26,7 +26,7 @@
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
 
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-            <span class="mdi mdi-sort-variant">Abdulslam App</span>
+            <span class="mdi mdi-sort-variant">My-Project</span>
           </button>
 
         </div>
@@ -74,6 +74,7 @@
                   <span class="menu-title">Products</span>
                 </a>
               </li>
+              @if(Auth::user()->role != 'User' )
 
             <li class="nav-item">
                 <a class="nav-link" href="/addProducts">
@@ -89,6 +90,7 @@
                 </a>
               </li>
 
+              @endif 
 
           <li class="nav-item">
             <a class="nav-link" href="/logout">

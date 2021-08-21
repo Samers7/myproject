@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Abdulslam</title>
+  <title>My Project</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
@@ -26,7 +26,7 @@
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
 
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-            <span class="mdi mdi-sort-variant">Abdulslam</span>
+            <span class="mdi mdi-sort-variant">My Project</span>
           </button>
 
         </div>
@@ -172,7 +172,10 @@
                           <td>{{$user->email}}</td>
                           <td>{{$user->role}}</td>
                           <td>
+                         
                           <form method='post' action="role/{{$user->id}}">@csrf
+
+                          @if(Auth::user()->role == 'Admin')
 
                           <select name="role" id="cars">
                             <option>change user permission</option>
@@ -180,7 +183,18 @@
                             <option value="Sub-admin">Sub-Admin</option>
                             <option value="User">regular_user</option>
 
+                          </select> 
+                          @else
+                
+
+                          <select name="role" id="cars">
+                            <option>change user permission</option>
+                            <option value="Sub-admin">Sub-Admin</option>
+                            <option value="User">regular_user</option>
+
                           </select>
+                          @endif
+
                           <button type='submit' class="btn btn-info"  data-toggle="modal" data-target="#exampleModalCenter">update permision</button>
                           </form>
                           </td>

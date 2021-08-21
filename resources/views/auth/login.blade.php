@@ -28,7 +28,7 @@
               <div class="brand-logo">
                 @if($errors->any())
                 <div class="alert alert-danger">
-                    <p><strong>Opps Something went wrong</strong></p>
+                    <p><strong>Ops Something went wrong</strong></p>
                     <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -51,10 +51,10 @@
                 @csrf
 
                 <div class="form-group">
-                  <input type="email" required  class="form-control form-control-lg" id="exampleInputEmail1" name="email" placeholder="Username" value="abdulsalam@app.com">
+                  <input type="email" required  class="form-control form-control-lg" id="exampleInputEmail1" name="email" placeholder="E-mail" >
                 </div>
                 <div class="form-group">
-                  <input type="password" required name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" value="abdulsalam">
+                  <input type="password" required name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" >
                 </div>
                 <div class="mt-3">
                   <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN IN</button>

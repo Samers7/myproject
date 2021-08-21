@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Abdulslam App</title>
+  <title>My Project</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('vendors/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{asset('vendors/base/vendor.bundle.base.css')}}">
@@ -26,7 +26,7 @@
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
 
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-            <span class="mdi mdi-sort-variant">Abdulslam App</span>
+            <span class="mdi mdi-sort-variant">My Project</span>
           </button>
 
         </div>
@@ -162,7 +162,7 @@
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright Abdulsalam App</span>
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">All rights reserved to Abdulsalam Alajln</span>
 
           </div>
         </footer>
